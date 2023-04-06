@@ -4,19 +4,11 @@ Bot for vocabulary.com. Runs off GPT-3.5 AI model and selenium. Has a pretty hig
 
 You must create a ChatGPT account in order to use the bot.
 
-To use, find your session token or username and password for ChatGPT and put them in the config.json
-
-If you registered with Google, you must use session token.
+To use, find your access token for ChatGPT and put them in the config.json
 
 {
-"email":"{email}"
-"password":"{password}"
+"acess_token":"{token}"
 }
 
-or
+To find your access token, login to your ChatGPT account on a browser, go to https://chat.openai.com/api/auth/session and copy the the "accessToken" value.
 
-{
-"session_token":"{session_token}"
-}
-
-You can find your session token by going to ChatGPT, inspect -> application -> cookies -> https://chat.openai.com/ -> __Secure-next-auth.session-token
